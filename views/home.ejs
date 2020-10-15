@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<title>INFOSPITAL</title>
+
+<link rel = "icon" href =
+"https://e7.pngegg.com/pngimages/307/335/png-clipart-red-cross-logo-american-red-cross-international-committee-of-the-red-cross-humanitarian-aid-international-red-cross-and-red-crescent-movement-international-federation-of-red-cross.png"
+        type = "image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif; color: #264653;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('title.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("quote.jpg");
+  min-height: 400px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+
+</style>
+<body onload="typeWriter()">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-home"></i> HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-users"></i> ABOUT</a>
+    <a href="./register" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-user-plus"></i> SIGNUP</a>
+    <a href="./login"class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-user"></i> LOGIN</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="./register" class="w3-bar-item w3-button" onclick="toggleFunction()">SIGNUP</a>
+    <a href="./login" class="w3-bar-item w3-button" onclick="toggleFunction()">LOGIN</a>
+  </div>
+</div>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity" id="demo"></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">INFOSPITAL</h3>
+  <p class="w3-center"><em>Providing up to date Health care information</em></p>
+  <p>Infospital is a platform where people can get information about different facilities
+  provided by the hospitals in their locality. Getting informed about number of vacant beds
+before visiting to the hospital is really helpful, especially in current covid-19 scenario.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="hospital.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to our website! Health care is an indivisible part of our life.
+      Getting up to date information about different health care facilities provided
+      is need of the moment. <strong>INFOSPITAL</strong> helps all the people in our society to make
+      important health related decisions by providing the necessary health related
+      information.</p>
+      <p>Hospitals and Doctors can join INFOSPITAL and register their details
+        which can be accessed by all the people who wish to avail health care facilities.
+        The details can be updated by the Registrant so that patients can have knowledge
+        of current status of the services provided.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-black w3-wide"><strong>“The art of medicine consists of amusing the patient while nature cures the disease.” - Voltaire</strong></span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">CHOOSE YOUR HOSPITAL</h3>
+  <p class="w3-center">Take a look at all the Hospitals registered with INFOSPITAL</p>
+
+
+  <form action="/display" method="GET">
+      <center><button type="submit" class="w3-button w3-padding-large w3-light-grey w3-center" style="margin-top:64px">GET INFO</button></center>
+  </form>
+
+
+
+</div>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="heart.jpg" style="width:100%" height="200" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="stet.jpg" style="width:100%" height="200" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="salad2.jpg" style="width:100%" height="200" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="shoe.jpg" style="width:100%" height="200" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="pill.jpg" style="width:100%" height="200" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="fruit2.jpg" style="width:100%" height="200" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="doc.jpg" style="width:100%" height="200" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="food.jpg" style="width:100%" height="200" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACT US!</h3>
+  <p class="w3-center"><em>We would love your feedback!</em></p>
+  <p class="w3-center"><i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-center"></i> Mumbai, India</p>
+  <p class="w3-center"><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-center"></i> Phone: +00 151515</p>
+  <p class="w3-center"> <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-center"></i> Email: mail@mail.com</p>
+</div>
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<script>
+var i = 0;
+var txt = '"I BELIEVE HEALTH IS A CIVIL RIGHT." ~ DENNIS KUCINICH';
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+<script type="text/javascript">
+  // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+</body>
+</html>
